@@ -6,12 +6,11 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vite.dev/config/
 export default defineConfig({
-	// base: "/auth-login-front/",
-	plugins: [vue()],
-	// plugins: [vue(), vueDevTools()],
-	// resolve: {
-	// 	alias: {
-	// 		"@": fileURLToPath(new URL("./src", import.meta.url)),
-	// 	},
-	// },
+	base: "/auth-login-front/",
+	plugins: [vue(), vueDevTools()],
+	resolve: {
+		alias: {
+			"@": fileURLToPath(new URL("./src", import.meta.url)),
+		},
+	},
 });
