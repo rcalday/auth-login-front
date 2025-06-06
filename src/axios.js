@@ -8,7 +8,8 @@ function getCookie(name) {
 }
 
 const api = axios.create({
-	baseURL: "http://13.49.64.185",
+	baseURL: "https://13.49.64.185",
+	// baseURL: "http://localhost:8000",
 	withCredentials: true,
 });
 
